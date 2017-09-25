@@ -2,7 +2,7 @@
 
 ## Dynamic Programming Problems
 Problems covered so far: 
-  * Common Recurrences:
-    ** computing binomial coefficients.
-    ** computing fibonacci
-  * max subarray sum and its extensions.
+1. Common Recurrences:
+  * computing binomial coefficients.
+  * computing fibonacci numbers.
+2. Max subarray sum and its extensions.
