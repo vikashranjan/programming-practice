@@ -13,7 +13,8 @@ evaluation at x = 2 is maximized.
 Source:
 Generated from the max array sum (in maxsum.py) problem.
 
-Technique: Dynamic Programming.
+Technique:
+Dynamic Programming.
 
 Thought Process:
 0. Look out for similar problems. Note that the maxsum problem is this
@@ -29,13 +30,24 @@ Related problems:
 _fixed_ array = [1, 2, 2^2, 2^3, ...].
 As one can guess, 2 (or 1) is not special. One may use any other number
 (real, irrational, or what have you).
-The reader will notice that the recursion for M[j] essentially
-Horner's formula in order to evaluate the polynomial.
-Question: Is it possible to use some other general fixed array as
+An interesting special case is -1: here, an _alternating_ sum is to be
+maximized, with the unseemly constraint that the ending coefficient
+should be +1. For [a, b, c], we are looking at a - b + c whereas for
+[a, b, c, d] we are looking at -a + b - c + d.
+3. Given an array, find the subarray for which the
+_absolute_ value of the alternating sum is maximized.
+This is simple. Given the array A, consider the array -A too.
+
+Question:
+1. Is it possible to use some other general fixed array as
 multipliers?
 Say for instance
 - the array = [1 + 1, 2 + 1, 2^2 + 1, ...]?
 - the array = [1, 3, 5, 7, ...]?
+
+Notes:
+The reader will notice that the recursion for M[j] essentially
+Horner's formula in order to evaluate the polynomial.
 '''
 
 import numpy as np
@@ -48,7 +60,7 @@ def maxSumPoly(arr):
         dangerous than declaring M = np.zeros((size)), because
         we are referring to the explicit locations arr[j]
         (which means we need to be more careful about the
-        array indices). 
+        array indices).
     '''
     n = len(arr)
     M = []
