@@ -36,7 +36,10 @@ should be +1. For [a, b, c], we are looking at a - b + c whereas for
 [a, b, c, d] we are looking at -a + b - c + d.
 3. Given an array, find the subarray for which the
 _absolute_ value of the alternating sum is maximized.
-This is simple. Given the array A, consider the array -A too.
+This is simple. Given the array A, consider the array -A too
+(or equivalently, given the array A, compute the _maximum_
+as well as the _minimum_ subarray of the form
+-a + b - c + d etc.).
 
 Question:
 1. Is it possible to use some other general fixed array as
