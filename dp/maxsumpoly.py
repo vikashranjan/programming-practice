@@ -31,8 +31,11 @@ As one can guess, 2 (or 1) is not special. One may use any other number
 (real, irrational, or what have you).
 The reader will notice that the recursion for M[j] essentially
 Horner's formula in order to evaluate the polynomial.
-Here, is it possible to use some other general fixed array as
-multipliers? Say for instance an array = [1, 3, 5, 7, ...] or something?
+Question: Is it possible to use some other general fixed array as
+multipliers?
+Say for instance
+- the array = [1 + 1, 2 + 1, 2^2 + 1, ...]?
+- the array = [1, 3, 5, 7, ...]?
 '''
 
 import numpy as np
@@ -43,7 +46,9 @@ def maxSumPoly(arr):
         instead of declaring the space for the matrix M,
         we append to it as we go. Somehow this feels more
         dangerous than declaring M = np.zeros((size)), because
-        we are referring to the locations.
+        we are referring to the explicit locations arr[j]
+        (which means we need to be more careful about the
+        array indices). 
     '''
     n = len(arr)
     M = []
