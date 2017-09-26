@@ -16,6 +16,7 @@ Problems covered so far:
   * [computing binomial coefficients.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/binom.py)
   * [computing fibonacci numbers.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/fib.py)
 * [Max subarray sum and its extensions.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/maxsumpoly.py)
+* Interval Scheduling Problems.
 
 ### References
 1. [TopCoder Tutorial on Dynamic Programming.](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
