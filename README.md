@@ -17,6 +17,7 @@ Problems covered so far:
   * [computing fibonacci numbers.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/fib.py)
 * [Max subarray sum and its extensions.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/maxsumpoly.py)
 * Interval Scheduling Problems.
+* [Counting Operations.](https://github.com/sambuddha-roy/programming-practice/blob/master/dp/countops.py)
 
 ### References
 1. [TopCoder Tutorial on Dynamic Programming.](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
