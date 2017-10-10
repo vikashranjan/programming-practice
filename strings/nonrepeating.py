@@ -3,6 +3,8 @@ Problem:
 Longest nonrepeating substring
 http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 
+Here, we may use either a dict or an array for storing the last indices of characters
+seen in the string. I choose to use a dict. 
 '''
 import numpy as np
 from collections import defaultdict
