@@ -4,20 +4,19 @@ Longest nonrepeating substring
 http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 
 Here, we may use either a dict or an array for storing the last indices of characters
-seen in the string. I choose to use a dict. 
+seen in the string. I choose to use a dict.
 '''
 import numpy as np
 from collections import defaultdict
 
 def nonrepeat(arr):
     arr = np.array(arr)
-    dict = defaultdict(lambda:0)
+    dict = defaultdict(lambda:-1)
     soln = np.zeros_like(arr, dtype = int)
     # initialize
     soln[0] = 1
     dict[arr[0]] = 0
     for i in range(1, len(arr)):
-        soln[i] = 0
         temp = dict[arr[i]]  #update index of current letter
         dict[arr[i]] = i
         if temp >= i - soln[i - 1]:
